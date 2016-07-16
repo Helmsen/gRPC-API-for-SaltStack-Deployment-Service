@@ -38,3 +38,5 @@ COPY scenario1.sh /fapra/scenario1.sh
 RUN chmod +x /fapra/scenario1.sh
 COPY key.pem /srv/salt/key/key.pem
 COPY DeploymentClient.jar /fapra/DeploymentClient.jar
+
+CMD ["/fapra/scenario1.sh"]
