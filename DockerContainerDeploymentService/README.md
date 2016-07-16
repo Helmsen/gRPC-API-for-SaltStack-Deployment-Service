@@ -1,7 +1,7 @@
 # Docker Container for Wordpress Specific Deployment Service
 
 The container provides a runtime environment for a SaltStack and AWS SDK based deployment service.
-The service provides Wordpress specific and generic deployment deployment functions. You can
+The service provides Wordpress specific and generic deployment functions. You can
 * start EC2 instances
 * terminate EC2 instances
 * query details about EC2 instances (public IP, public DNS, etc.)
