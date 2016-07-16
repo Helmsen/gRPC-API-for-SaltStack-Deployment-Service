@@ -12,4 +12,4 @@ The service provides Wordpress specific and generic deployment functions. You ca
 * backup a MySQL database
 * restore a MySQL backup
 
-Create a docker image with ```docker build -t teamsaltstack/t1c1 <pathToDockerfile>``` and run a container with ```docker run -p 40011:40011 teamsaltstack/t1c1```
+Create a docker image with ```docker build -t <containerName> <pathToDockerfile>``` and run a container with ```docker run -p 40011:40011 <containerName>```
