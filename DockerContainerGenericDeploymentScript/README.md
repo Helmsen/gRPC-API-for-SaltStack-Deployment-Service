@@ -10,4 +10,6 @@ This docker container runs a test script, which tests the generic deployment ser
 
 The private ssh-key of the specified KEY_PAIR_NAME must be present in this directory (<repositoryRoot>/DockerContainerGenericDeploymentScript) before you run the test script and must be named as ```key.pem```.
 
+Important: The generic deployment method applies SaltStateFiles (ssl) on a remote machine. But it can not send customized files to a remote machine. Thus it is not possible to configure installed application (we would have to send a customized config file). So you have to set the database of the wordpress installation manually (via browser).
+
 Create a docker image with ```docker build -t <containerName> <pathToDockerfile>``` and run a container with ```docker run <containerName>```
