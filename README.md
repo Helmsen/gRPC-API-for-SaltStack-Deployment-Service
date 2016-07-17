@@ -13,9 +13,9 @@ The service provides Wordpress specific and generic deployment functions. You ca
 * restore a MySQL backup
 
 The wordpress deployment script container runs a test script which tests the wordpress specific deployment methods.
-It starts two EC2 instances, deploys MySQL and Wordpress and connect these two components.
+It starts two EC2 instances, deploys MySQL and Wordpress and connects those two components.
 
-The generic deployment script container runs a test script, which tests the generic deployment service. Itstarts a EC2 instance and installs MySQL and Wordpress on it. Important: The generic deployment method applies SaltStateFiles (ssl) on a remote machine. But it can not send customized files to a remote machine. Thus it is not possible to configure installed application (we would have to send a customized config file). So you have to set the database of the wordpress installation manually (via browser).
+The generic deployment script container runs a test script, which tests the generic deployment service. It starts a EC2 instance and installs MySQL and Wordpress on it. Important: The generic deployment method applies SaltStateFiles (ssl) on a remote machine. But it can not send customized files to a remote machine. Thus it is not possible to configure installed application (we would have to send a customized config file). So you have to set the database of the wordpress installation manually (via browser).
 
 There is a preconfigured scenario for each test script (```docker-compose-wordpress.yml``` and ```docker-compose-generic.yml```).
 Run a preconfigured wordpress deployment scenario with ```docker-compose up -f <nameOfComposeFile>```. But before you have to provide some AWS information in the corresponding compose file:

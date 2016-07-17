@@ -1,6 +1,8 @@
 # Docker Container for Test Script
 
-This docker container runs a test script, which tests the generic deployment service. Before you run a container, provide some AWS information in the Dockerfile:
+This docker container runs a test script, which tests the generic deployment service.
+It starts a EC2 instance and installs MySQL and Wordpress on it.
+Before you run a container, provide some AWS information in the Dockerfile:
 * ```KEY_ID```: Your AWS access key id
 * ```KEY_SECRET```: Your AWS access key secret
 * ```KEY_PAIR_NAME```: Name of the SSH-Key pair you want to use to start the EC2 instance (must exist in AWS management console)
