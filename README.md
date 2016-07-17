@@ -24,4 +24,5 @@ Run a preconfigured wordpress deployment scenario with ```docker-compose up -f <
 * ```KEY_PAIR_NAME```: Name of the SSH-Key pair you want to use to start the EC2 instance (must exist in AWS management console)
 * ```SECURITY_GROUP_NAME```: Name of the security group you want to use to configure the EC2 instance (must exist in AWS management console)
 
+These information must be valid for the AWS region us-west-1, because the test script creates EC2 instances in this region.
 The private ssh-key of the specified KEY_PAIR_NAME must be present in the docker container directory (```DockerContainerWordpressDeploymentScript``` or ```DockerContainerGenericDeploymentScript```) before you run the test script and must be named as ```key.pem```.

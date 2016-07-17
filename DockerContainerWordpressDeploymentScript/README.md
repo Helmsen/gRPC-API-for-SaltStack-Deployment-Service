@@ -8,6 +8,7 @@ This docker container runs a test script, which tests the wordpress specific dep
 * ```IP_SERVER```: IP of the host which runs the deployment service
 * ```PORT_SERVER```: Port the deployment service is listening on
 
+These information must be valid for the AWS region us-west-1, because the test script creates EC2 instances in this region.
 The private ssh-key of the specified KEY_PAIR_NAME must be present in this directory (<repositoryRoot>/DockerContainerWordpressDeploymentScript) before you run the test script and must be named as ```key.pem```.
 
 Create a docker image with ```docker build -t <containerName> <pathToDockerfile>``` and run a container with ```docker run <containerName>```
