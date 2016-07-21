@@ -5,7 +5,6 @@ MAINTAINER Wilhelm Stephan, Leon Graser, Dominik Bäßler
 # Install Java 8
 # ---------------
 RUN apt-get update && \
-    apt-get upgrade -y && \
     apt-get install -y software-properties-common && \
     apt-get install -y python-software-properties && \
     add-apt-repository ppa:webupd8team/java -y && \
